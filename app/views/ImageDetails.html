@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="css/main.css">
+
+
+<header>
+<nav class="navbar navbar-default" style="background-color: #00a9ff">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/"> </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#!ImageDetails"><i class="fa fa-home fa-3x" style="color:white"></i></a></li>
+            <li><a href="#!ImageUpload"><i class="fa fa-upload fa-3x" style="color:white"></i></a></li>
+            <li><img src="" ></li> 
+        </ul>
+    </div>
+</nav>
+</header>
+<body ng-controller="ImageDetailsController">
+<script src='js/ImageDetails.js'></script>
+<script src='js/main.js'></script>
+<script src="js/main.config.js"></script>
+<div id="search" ng-hide="myvar">
+ <button type="submit" id="btn-search" ng-click="myvar=true"<i class="fa fa-search fa-3x" style="color:#00a9ff"</i></button> 
+</div>
+<div id="filter" ng-show="myvar"> 
+<span  aria-colspan="80px">
+ <input type="checkbox" id="chckbox-photos-by-friends"  style="color:#00a9ff"><b>Photos By Friends</b>
+</span>
+<span>
+ <input type="checkbox" id="chckbox-photos-by-me" style="color:#00a9ff"><b>Photos By Me</b>
+</span>
+<span>  <input type="date" id="date" placeholder="Date"><i class="fa fa-calendar fa-2x" style="color:#00a9ff"></i></span>
+ <button type="submit" id="btn-filter" style="color:#00a9ff"><b>Filter</b></button>
+ <button type="submit" id="btn-close" ng-click="myvar=false"<i class="fa fa-times fa-2x" style="color:red"  aria-hidden="true"></i></button>
+</div>
+<div id="image_details">
+<a href="#!ViewImage"><img src="images/img2.png"></a>
+<img src="images/img1.png">
+</div>
+</body>
